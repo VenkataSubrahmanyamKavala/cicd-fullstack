@@ -1,45 +1,73 @@
-header{
-  height: 50px;
-  line-height: 50px;
-  background: blue;
-  color: white;
-}
-.title{
-  font-size: 16pt;
-  font-weight: bold;
-}
-footer{
-  height: 30px;
-  line-height: 30px;
-  font-size: 8pt;
-  background: lightseagreen;
-  color: white;
-}
-section{
-  height: calc(100% - 80px);
-  overflow: auto;
-}
-td{
-  color: green;
-  font-weight: bold;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-input, label{
-  height: 30px;
-  width: 100px;
-  font-size: 16pt;
-  color: green;
-  font-weight: bold;
-  border-color: lightpink;
-  border-radius: 5pt;  
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 400px;
 }
 
-button{
-  background: green;
+.title {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.input-box input {
+  width: 45%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.button-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.button-box button {
+  flex: 1;
+  min-width: 70px;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
   color: white;
-  font-weight: bold;
-  width: 70px;
-  height: 30px;
-  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
 }
 
+.button-box button:hover {
+  background-color: #0056b3;
+}
+
+.result {
+  font-size: 20px;
+  font-weight: bold;
+  color: #222;
+  background: #f0f8ff;
+  padding: 10px;
+  border-radius: 8px;
+}
