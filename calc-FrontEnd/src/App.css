@@ -1,0 +1,45 @@
+header{
+  height: 50px;
+  line-height: 50px;
+  background: blue;
+  color: white;
+}
+.title{
+  font-size: 16pt;
+  font-weight: bold;
+}
+footer{
+  height: 30px;
+  line-height: 30px;
+  font-size: 8pt;
+  background: lightseagreen;
+  color: white;
+}
+section{
+  height: calc(100% - 80px);
+  overflow: auto;
+}
+td{
+  color: green;
+  font-weight: bold;
+}
+
+input, label{
+  height: 30px;
+  width: 100px;
+  font-size: 16pt;
+  color: green;
+  font-weight: bold;
+  border-color: lightpink;
+  border-radius: 5pt;  
+}
+
+button{
+  background: green;
+  color: white;
+  font-weight: bold;
+  width: 70px;
+  height: 30px;
+  border-radius: 5px;
+}
+
