@@ -1,7 +1,7 @@
 import axios from "axios";
 
 // export const BASEURL = "http://localhost:2025/";
-export const BASEURL = "http://localhost:8082/calc";
+export const BASEURL = "http://localhost:8082/calc/";
 export const callApi = async (method, endpoint) => {
   try {
     const response = await axios({
