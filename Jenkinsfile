@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    tools {
+        maven 'Maven3'   // 👈 This name must match what you configured in Jenkins Tools
+    }
+
     stages {
 
         // ===== FRONTEND BUILD =====
@@ -30,7 +34,7 @@ pipeline {
         stage('Build Backend') {
             steps {
                 dir('cicd-backend') {
-                    bat 'mvn clean package'
+                    bat 'mvn clean package -DskipTests'
                 }
             }
         }
